@@ -6,6 +6,9 @@ defmodule C.Application do
   use Application
 
   def start(_type, _args) do
+    IO.puts("C.Application.start")
+    :init.stop()
+
     children = [
       # Starts a worker by calling: C.Worker.start_link(arg)
       # {C.Worker, arg}

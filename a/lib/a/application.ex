@@ -6,6 +6,7 @@ defmodule A.Application do
   use Application
 
   def start(_type, _args) do
+    IO.puts("A.Application.start")
     children = [
       # Starts a worker by calling: A.Worker.start_link(arg)
       # {A.Worker, arg}
